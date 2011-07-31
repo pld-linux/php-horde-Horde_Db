@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Horde Database Libraries
 Name:		php-horde-Horde_Db
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.horde.org/get/%{pearname}-%{version}.tgz
-# Source0-md5:	75096c0d4c6295824a9d754a1cf98474
+# Source0-md5:	8a411cdf0feb85ec1e254c93f9923cdf
 URL:		https://github.com/horde/horde/tree/master/framework/Db/
 BuildRequires:	php-channel(pear.horde.org)
 BuildRequires:	php-packagexml2cl
