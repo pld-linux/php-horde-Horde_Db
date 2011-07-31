@@ -3,16 +3,15 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Horde Database Libraries
 Name:		php-horde-Horde_Db
-Version:	1.0.1
+Version:	1.0.3
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.horde.org/get/%{pearname}-%{version}.tgz
-# Source0-md5:	8a411cdf0feb85ec1e254c93f9923cdf
+# Source0-md5:	5a36e0e50ac33ff26c15628d52fe923c
 URL:		https://github.com/horde/horde/tree/master/framework/Db/
 BuildRequires:	php-channel(pear.horde.org)
 BuildRequires:	php-packagexml2cl
-BuildRequires:	php-pear-PEAR
 BuildRequires:	php-pear-PEAR >= 1:1.7.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
@@ -65,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog install.log
 %doc optional-packages.txt
 %doc docs/Horde_Db/*
-%attr(755,root,root) %{_bindir}/horde-db-migrate
+%attr(755,root,root) %{_bindir}/horde-db-migrate-component
 %{php_pear_dir}/.registry/.channel.*/*.reg
 %{php_pear_dir}/Horde/Db.php
 %{php_pear_dir}/Horde/Db
