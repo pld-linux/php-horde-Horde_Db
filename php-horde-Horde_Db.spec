@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Horde_Db
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Horde Database Libraries
 Name:		php-horde-Horde_Db
 Version:	1.2.1
